@@ -52,7 +52,7 @@ const Item = styled("div")({
   height: 150,
   marginBottom: "2%",
 
-  "&:nth-child(3n)": {
+  "&:nth-of-type(3n)": {
     width: "100%",
   },
 });
