@@ -1,6 +1,7 @@
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { FiArrowDown } from "react-icons/fi";
+import { mq } from "../utils";
 
 const Section = styled("section")({
   flex: 1,
@@ -13,11 +14,14 @@ const Section = styled("section")({
 });
 
 const Title = styled("div")({
-  fontSize: "6rem",
   textAlign: "center",
   fontWeight: 700,
   letterSpacing: "-0.04em",
   color: "hsl(0, 0%, 100%)",
+  fontSize: "4rem",
+  [mq[2]]: {
+    fontSize: "6rem",
+  },
 });
 
 const bounce = keyframes`
